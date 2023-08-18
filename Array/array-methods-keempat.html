@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods Part 4</title>
+</head>
+<body>
+    <script>
+        let myArr = ["Matt", "Chris", "Kevin", "Messi", "Jordan"];
+        let name = prompt("Masukan Nama Anda");
+        myArr.find(function(e){
+            if(e === name){
+                console.log("Nama Sudah Terdapat diangkot")
+                return true
+            }else{
+                myArr.push(name);
+                return
+            }
+            console.log(myArr)
+        })
+
+        // let seleksi = function(dataUser){
+        //     if(dataUser === name){
+        //         console.log("Nama Sudah Terdapat diangkot")
+        //     }
+        // }
+        // myArr.find(seleksi);
+
+        //filter
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Parameter dan Argument</title>
+</head>
+<body>
+    <!-- Ini Arguments Perhatikan baik baik -->
+    <!-- Nilai Arguments tidak dapat dipush kedalam data array -->
+    <script>
+        let namaPertama = prompt(`Nama Pertama`);
+        let namaKedua = prompt(`Nama Kedua`);
+        let namaKetiga = prompt(`Nama Ketiga`);
+        let dataUser = []
+
+        let fungsiInputNama = function(namaPertama, namaKedua, namaKetiga){
+            dataUser.push(namaPertama, namaKedua, namaKetiga)
+
+            for(let i=0;i < dataUser.length;i++){
+                document.write(`Nomor Urut Ke- ${[i+1]} Dengan Nama ${dataUser[i]} </br>`) 
+            }
+            return;
+        }
+        fungsiInputNama(namaPertama, namaKedua, namaKetiga)
+    </script>
+</body>
+</html>

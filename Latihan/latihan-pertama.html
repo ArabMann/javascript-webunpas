@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Pertama</title>
+</head>
+
+<body>
+    <script>
+        let penumpang = ["Ade", undefined, "Tirta", undefined];
+        let tambahPenumpang = function (namaPenumpang, penumpang) {
+            if (penumpang.length === 0) {
+                penumpang.push(namaPenumpang)
+                return penumpang;
+            } else {
+                for (let i = 0; i < penumpang.length; i++) {
+                    if (penumpang[i] === undefined) {
+                        penumpang[i] = namaPenumpang;
+                        return penumpang;
+                    } else if (penumpang[i] === namaPenumpang) {
+                        console.log("Nama Sudah Ada")
+                        return penumpang;
+                    }
+                    else if (i === penumpang.length - 1) {
+                        penumpang.push(namaPenumpang)
+                        return penumpang;
+                    }
+                }
+            }
+        }
+
+        // let tambahPenumpang = function (namaPenumpang) {
+        //     if (penumpang.length === 0) {
+        //         penumpang.push(namaPenumpang);
+        //         return penumpang;
+        //     } else {
+        //         penumpang.forEach(function (e, i, a) {
+        //             if (e === namaPenumpang) {
+        //                 console.log("Nama Sudah ada")
+        //                 return penumpang;
+        //             } else if(e === undefined){
+        //                 penumpang.splice(, 1, namaPenumpang);
+        //                 return penumpang;
+        //             }
+        //         })
+        //     }
+        // }
+
+        let hapusPenumpang = function (namaPenumpang, penumpang) {
+            if (penumpang.length === 0) {
+                console.log("Angkot Kosong")
+                return penumpang;
+            } else {
+                for (let i = 0; i < penumpang.length; i++) {
+                    if (penumpang[i] === namaPenumpang) {
+                        penumpang[i] = undefined;
+                        return penumpang;
+                    } else if (penumpang[i] !== namaPenumpang) {
+                        console.log("Tidak ada nama penumpang");
+                        return penumpang;
+                    }
+                }
+            }
+        }
+
+
+    </script>
+    <!-- else if(myArr.length > 0) {
+        myArr.find(function (e) {
+            if (e !== name) {
+               return myArr.push(name)
+            }else{
+                console.log("Nama Sudah Ada")
+            }
+        })
+        return myArr; 
+    
+    
+    
+    
+    let menambah = function (name) {
+            if (myArr.length === 0) {
+                myArr.push(name)
+                return myArr;
+            } else if (myArr.length > 0) {
+                myArr.find(function (e) {
+                    if (e !== name) {
+                       
+                    } else {
+                        console.log("Nama Sudah Ada")
+                    }
+                })
+                return myArr;
+            }
+        }-->
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Fungsi Pertama</title>
+</head>
+
+<body>
+    <script>
+        // Calculator Low Budget
+
+        /*
+        let awal = true;
+        while(awal === true){
+            alert("Selamat datang Mari kita Mulai!!!!");
+            let angkaPertama = parseInt(prompt("Masukan Nilai Pertama"));
+            let angkaKedua = parseInt(prompt("Masukan Nilai Kedua "));
+            let operator = prompt("Silahkan Pilih + - * /")
+        fungsiAritmatika = function(angkaPertama, angkaKedua, operator){
+            let total;
+            if(operator === "+"){
+                return total = angkaPertama + angkaKedua;
+            }else if(operator === "-"){
+                return total = angkaPertama - angkaKedua;
+            }else if(operator === "*"){
+                return total = angkaPertama * angkaKedua;
+            }else if(operator === "/"){
+                return total = angkaPertama / angkaKedua;
+            }else{
+                console.log("Simbol tidak terdefinisi")
+            }
+        }
+
+        alert(fungsiAritmatika(angkaPertama, angkaKedua, operator));
+        awal = confirm("Mau Mencoba Lagi ??")
+    }*/
+
+    //Bangun Datar
+
+    alert("Mari Kita Mulai")
+    let bangunDatar = prompt("Pilihlah Bangun Datar berikut ini, Persegi, Persegi Panjang dan Segitiga");
+
+    rumusBangunDatar = function(bangunDatar){
+        let panjang, lebar, alas, tinggi, sisi;
+        let text;
+        let total;
+
+        if(bangunDatar === "Persegi" || bangunDatar === "persegi"){
+            sisi = parseInt(prompt("Masukan Nilai"));
+            return total = Math.pow(sisi, 2);
+        }else if(bangunDatar === "Persegi Panjang" || bangunDatar === "persegi panjang"){
+            panjang = parseInt(prompt("Masukan Nilai"));
+            lebar = parseInt(prompt("Masukan Nilai"));
+            return total = panjang * lebar;
+        }else if(bangunDatar === "Segitiga" || bangunDatar === "segitiga"){
+            alas = parseInt(prompt("Masukan Nilai"))
+            tinggi = parseInt(prompt("Masukan Nilai"))
+            return total = (alas * tinggi) / 2;
+        } else{
+            text = "Bangun Datar Tidak Terdefinis"
+            return text;
+        }
+    }
+
+    alert(rumusBangunDatar(bangunDatar))
+
+
+    </script>
+</body>
+
+</html>

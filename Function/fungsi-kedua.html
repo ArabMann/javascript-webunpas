@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameter dan Argument Part 1</title>
+</head>
+<body>
+    <script>
+        // Fungsi menggunakan argument fungsi
+        let angkaPertama = parseInt(prompt(`Masukan Nilai Pertama`))
+        let angkaKedua = parseInt(prompt(`Masukan Nilai Kedua`))
+
+        let rumusTambah = function(nilaiPertama, nilaiKedua){
+            let total;
+            return total = nilaiPertama + nilaiKedua;
+        }
+
+        let rumusPersegiPanjang = function(panjang, lebar){
+            let total;
+            return total = panjang * lebar;
+        }
+
+        alert(rumusPersegiPanjang(rumusTambah(angkaPertama, angkaKedua), angkaKedua))
+    </script>
+</body>
+</html>

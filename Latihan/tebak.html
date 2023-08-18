@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Tebakan</title>
+</head>
+
+<body>
+    <script>
+        let aksi = true;
+        while (aksi === true) {
+            alert(` Tebak Angka 1 - 10`)
+            let computer = null;
+            computer = Math.floor(Math.random() * 10);
+            for (let i= 3; i > 0; i--) {
+                let tanya = parseInt(prompt(`Masukan Angka Tebakan ? Percobaan ${i}`))
+                if (computer === tanya) {
+                    alert(`Benar, Angka Yang Dimasukan Sama`)
+                    break
+                } else if (tanya < computer) {
+                    alert(`Terlalu Rendah `)
+                } else if (tanya > computer && tanya <= 10) {
+                    alert(`Terlalu Tinggi `)
+                } else {
+                    alert('Pilih 1- 10')
+                }
+            }
+            aksi = confirm("Mau Mencoba Lagi??")
+        }
+
+    </script>
+</body>
+
+</html>

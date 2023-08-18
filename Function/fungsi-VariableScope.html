@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Scope</title>
+</head>
+<body>
+    <script>
+        // Javascript has type function block, if you call outside let angka function is error, but you call number in function is run
+        let number = 10;
+        function rumus(){
+            let angka = 5;
+            console.log(number)
+        }
+        rumus()
+        console.log(angka)
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulasi Array</title>
+</head>
+
+<body>
+    <script>
+        // 1. Create Array
+        let mahasiswaName = ["Tirta", "Rendy", "Deka", "Hafiz"];
+        console.log(mahasiswaName); // Memanggil Semua Isi Array
+        console.log(mahasiswaName[0]) // Memanggil 1 array bedasarkan index
+
+        // 2. Menambah Isi Array
+        mahasiswaName[4] = "Nando"
+        console.log(mahasiswaName)
+
+        // 3. Mengubah isi Array
+        mahasiswaName[3] = "Michlee"
+        console.log(mahasiswaName)
+
+        // 4. Menampilkan Isi Array Menggunakan Looping
+        for (let i = 0; i < mahasiswaName.length; i++) {
+            console.log(`Nim Ke -${i + 1} Dengan Nama ${mahasiswaName[i]}`);
+        }
+
+       
+    </script>
+</body>
+
+</html>

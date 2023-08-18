@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up</title>
+</head>
+
+<body>
+    <script>
+        /* 
+        Pop Up Box
+        alert()
+        prompt()
+        confirm()
+        */
+
+        // let a = "Mantap Man"
+        // let x = alert(a)
+        // document.write(x);
+
+        // let a = parseInt(prompt("Nilai Pertama"));
+        // let b = parseInt(prompt("Nilai Kedua"));
+        // let c = prompt("Operator + - * /");
+
+        // if (c === "+") {
+        //     let result = (a) + (b);
+        //     document.write(result)
+        // } else if (c === "-") {
+        //     let result = (a) - (b);
+        //     document.write(result)
+        // } else if (c === "*") {
+        //     let result = (a) * (b);
+        //     document.write(result)
+        // } else if (c === "/") {
+        //     let result = (a) / (b);
+        //     document.write(result)
+        // }
+
+        // let dlt = confirm("Hapus Data Ini?");
+
+        // if(dlt === true){
+        //     alert("Berhasil Dihapus")
+        // }else{
+        //     alert("Tidak Jadi Dihapus")
+        // }
+
+        alert("Selamat Datang");
+        let a = true;
+
+        while (a === true) {
+            let nama = prompt("Masukan Nama Anda ??");
+            if (nama === "Tirta" || nama === "ArabMann") {
+                alert(nama);
+            } else {
+                alert("Username Salah");
+                nama = prompt("Masukan Username Anda ??")
+            }
+
+            a = confirm("Coba Lagi ??");
+            while (a === false) {
+                if (nama === nama) {
+                    alert(`Terima Kasih ${nama}`)
+                    break
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameter Dan Argument part 2</title>
+</head>
+
+<body>
+    <script>
+        let awal = confirm("Ingin Masukan Data User ???");
+        
+        while (awal === true) {
+            let nama = prompt("Masukan Nama Anda ??");
+            let tambahNama = function () {
+                
+                for (let i = 0; i < arguments.length; i++) {
+                    console.log(arguments[i])
+                }
+                return;
+            }
+            tambahNama(nama)
+
+            
+            awal = confirm("Mau Input Data Lagi ???")
+        }
+
+
+    </script>
+</body>
+
+</html>

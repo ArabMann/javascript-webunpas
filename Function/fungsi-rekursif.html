@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungsi Rekursif</title>
+</head>
+<body>
+    <script>
+
+        let perulangan = function(angka){
+            if(angka === 0)return; // Base Case
+            console.log(angka)
+            return perulangan(angka-1);
+        }
+        perulangan(10)
+
+        let faktorial = function(angka){
+            if(angka === 0)return 1; // Base Case
+            console.log(angka)
+            return angka * faktorial(angka-1)
+        }
+        faktorial(5)
+
+        let data = ["Ade", "Greg", "John", "Frank", "ArabMann"]
+        let userData = function(angka){
+            if(data.length < angka+1) return; // Base Case
+            console.log(data[angka])
+            return userData(angka+1)
+        }
+        userData(0)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat dan Menjalankan FUNCTION</title>
+</head>
+<body>
+    <script>
+        alert(`Ayo Mulai`);
+        let kubusA = prompt("Masukan Nilai Kubus A")
+        let kubusB = prompt("Masukan Nilai Kubus B")
+
+        rumusKubusA = function(nilaiKubusA){
+            let volumeA = nilaiKubusA * nilaiKubusA * nilaiKubusA;
+
+            return volumeA;
+        }
+
+        function rumusKubusB(nilaiKubusB){
+            let volumeB = nilaiKubusB * nilaiKubusB * nilaiKubusB;
+            return volumeB;
+        }
+
+        console.log(rumusKubusA(kubusA)+rumusKubusB(kubusB));
+    </script>
+</body>
+</html>

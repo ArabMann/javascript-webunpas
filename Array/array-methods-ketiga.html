@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method Array Part 3</title>
+</head>
+<body>
+    <script>
+        // // forEach merupakan method looping pada array, namun forEach tidak mengembalikan nilai apapun, tidak dapat menghentikan iteras secara paksa dengan menggunakan break maupun return
+        let myArr = ["Ade", "Tirta", "Adrianta"]
+        // dataUserArray menampilkan data dalam array, nomorIndex menampilkan nomor, array menampilkan seluruh data array
+        let cetak = function(dataUserArray, nomorIndex, array){
+            console.log(`Nomor urut ${nomorIndex+1} dengan Nama ${dataUserArray} perbedaannya ${array[nomorIndex]}`);
+        }
+
+        myArr.forEach(cetak); //Output Nomor urut 1 dengan Nama Ade perbedaannya Ade,Tirta,Adrianta
+
+        // let myArr = ["Ade", "Tirta", "Adrianta"]
+        // myArr.forEach(function(dataUser){
+        //     console.log(dataUser)
+        // })
+
+        // let myArrNew = myArr.map(function(dataUser, nomorIndex, namaArray){
+        //     console.log(dataUser)
+        //     return dataUser
+        // })
+
+        // console.log(myArrNew)
+
+
+
+    </script>
+</body>
+</html>

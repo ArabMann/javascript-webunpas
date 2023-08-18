@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deklarasi dan Expression</title>
+</head>
+
+<body>
+    <script>
+        let dataUser = ["Ade", "Matt", "John", "Wick"];
+        let dataHewan =["Beruang","Angsa", "Babi","Tupai"]
+        let i = 0;
+
+        /* 
+        Fungsi Deklarasi
+        Memiliki kelebihan Hoisting
+        */
+        function userData(i) {
+            if(dataUser.length < i+1)return;
+            console.log(dataUser[i])
+            return userData(i+1);
+        }
+        userData(i);
+
+        function hewanUser(i) {
+            if(dataHewan.length < i+1)return;
+            console.log(dataHewan[i])
+            return hewanUser(i+1);
+        }
+        hewanUser(i)
+
+
+        /* 
+        Fungsi Expression 
+        Lebih PowerFull
+        Sebagai Closure
+        Sebagai Argumen untuk function lain
+        IIFE(Immediality Invoked Function Expression)
+
+        Tidak dapat memakai konsep hoisting seperti fungsi deklrasi
+        */ 
+       
+        let dataBuah = ["Melon","Semangka","Anggur", "Jeruk"];
+        let userBuah = function(index){
+            if(dataBuah.length < index+1)return ;
+            console.log(dataBuah[index])
+            return userBuah(index+1);
+        }
+
+        userBuah(i)
+    </script>
+</body>
+
+</html>

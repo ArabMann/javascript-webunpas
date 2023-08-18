@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Nested</title>
+</head>
+
+<body>
+    <script>
+
+        // Persegi
+        // let baris = 0;
+        // let s = '';
+        // for (baris; baris <= 10; baris++) {
+        //     let kolom = 0;
+        //     for (kolom; kolom <= 5; kolom++) {
+        //         s += '*';
+        //     }
+        //     s += '\n';
+        // }
+        // console.log(s)
+
+        // Segitiga Alas dibawah
+        // let baris = 1;
+        // let s = '';
+        // for (baris; baris <= 5; baris++) {
+        //     let kolom = 1;
+        //     for (kolom; kolom <= baris; kolom++) {
+        //         s += '*';
+        //     }
+        //     s += '\n'
+        // }
+        // console.log(s)
+
+
+        // Segitiga Pantat Diatas
+        // let baris = 5;
+        // let s = '';
+        // for (baris; baris >= 1; baris--) {
+        //     let kolom = 1;
+        //     for (kolom; kolom <= baris; kolom++) {
+        //         s += '*';
+        //     }
+        //     s += '\n'
+        // }
+        // console.log(s)
+
+
+        // Segitiga Pantat Bawah Pindah Posisi 
+        // let rows = 5
+        // let baris = rows;
+        // let s = '';
+        // for (baris; baris >= 1; baris--) {
+        //     let kolom = 1;
+        //     let k = baris;
+
+        //     for (kolom; kolom <= baris; kolom++) {
+        //         s += ' ';
+        //     }
+        //     for(k; k <= rows; k++ ){
+        //         s += '*';
+        //     }
+        //     s += '\n'
+        // }
+        // console.log(s)
+
+        // Segitiga Pantat Diatas Pindah posisi
+
+        let baris = 5;
+        let s = '';
+        for (baris; baris >= 1; baris--) {
+            let kolom = 10;
+            for (kolom; kolom >= baris; kolom--) {
+                s += ' ';
+            }
+            for(k=1; k <= baris; k++){
+                s+= '*';
+            }
+            s += '\n'
+        }
+        console.log(s)
+
+
+
+        /*
+
+
+        
+         
+        
+        */
+
+
+
+
+
+    </script>
+</body>
+
+</html>

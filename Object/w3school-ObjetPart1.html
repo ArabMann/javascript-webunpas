@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object part 1</title>
+</head>
+
+<body>
+    <script>
+        const rumus = {
+            sisi: 5,
+            panjang: 10,
+            lebar: 5,
+            tinggi: 7,
+            rumusBalok: function () {
+                return `${this.lebar * this.panjang * this.tinggi}`;
+            }
+        }
+        console.log(`Ini nilai sisi ${rumus.sisi}`) // 5
+        console.log(`Ini Nilai Panjang ${rumus['panjang']}`) //10
+        console.log(`Ini Nilai Balok ${rumus.rumusBalok()}`) // 350
+        console.log(`Ini Nilai Balok ${rumus['rumusBalok()']}`) // Undifined, mungkin pemanggilan pake kurung siku, tidak dapat digunakan pada function
+
+
+
+        //For Loop pada Object
+        const esaUnggul = {
+            mhs1 : "Ade",
+            mhs2 : "Matt",
+            mhs3 : "Josep",
+            mhs4 : "Greg",
+            mhs5 : "Santoru"
+        }
+        for (let mahaSiswa in esaUnggul){
+            console.log(esaUnggul[mahaSiswa])
+        }
+
+        var score = 0
+        Score = score + 100;
+
+        console.log(score)
+        
+    </script>
+</body>
+
+</html>

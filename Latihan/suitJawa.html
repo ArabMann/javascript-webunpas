@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let action = true;
+        while (action === true) {
+            let suitJawa = prompt(`Pilih Gunting | Batu | Kertas`);
+
+            // Create Untuk Comp
+            let computer = Math.floor(Math.random() * 10);
+
+            if (computer <= 4) {
+                computer = `Gunting`
+            } else if (computer >= 5 && computer <= 8) {
+                computer = `Batu`
+            } else {
+                computer = `Kertas`
+            }
+
+
+            if (suitJawa === computer) {
+                alert(`SERI! Kamu ${suitJawa} Dan Computer ${computer}`)
+            }
+            else if (suitJawa === "Gunting" && computer === "Batu") {
+                alert(`Computer Menang! Kamu ${suitJawa} Dan Computer ${computer}`)
+            }
+            else if (suitJawa === "Batu" && computer === "Gunting") {
+                alert(`Kamu Menang! Kamu ${suitJawa} Dan Computer ${computer}`)
+
+            }
+            else if (suitJawa === "Kertas" && computer === "Batu") {
+                alert(`Kamu Menang! Kamu ${suitJawa} Dan Computer ${computer}`)
+            }
+            else if (suitJawa === "Batu" && computer === "Kertas") {
+                alert(`Computer Menang! Kamu ${suitJawa} Dan Computer ${computer}`)
+            }
+            else if (suitJawa === "Kertas" && computer === "Gunting") {
+                alert(`Computer Menang! Kamu ${suitJawa} Dan Computer ${computer}`)
+            }
+            else if (suitJawa === "Gunting" && computer === "Kertas") {
+                alert(`Kamu Menang! Kamu ${suitJawa} Dan Computer ${computer}`)
+            } else {
+                alert(" Yang Anda Masukan Salah")
+            }
+
+            action = confirm("Apakah Ingin Bermain Lagi??")
+
+        }
+    </script>
+</body>
+
+</html>

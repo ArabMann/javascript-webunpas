@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+
+<body>
+    <script>
+        let angkaPertama = parseInt(prompt("Masukan Angka Pertama ?"))
+        let angkaKedua = parseInt(prompt("Masukan Angka Kedua ?"))
+        let operator = prompt("Masukan Operator");
+        switch (operator) {
+            case ("+"):
+                alert(angkaPertama + angkaKedua);
+                break;
+            case ("-"):
+                alert(angkaPertama - angkaKedua);
+
+                break;
+            case ("*"):
+                alert(angkaPertama * angkaKedua);
+                break;
+            case ("/"):
+                alert(angkaPertama / angkaKedua);
+                break;
+            default:
+                alert("Anda Salah Masukan Operator")
+                break;
+        }
+    </script>
+</body>
+
+</html>
